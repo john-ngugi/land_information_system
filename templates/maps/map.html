@@ -1,7 +1,15 @@
 {% extends 'base.html' %} {% block content %} {% include 'forms/locationform.html' %}
 <div id="map"></div>
-<div class="btn-menu">
-    <button><i class="fa-solid fa-plus fa-xl"></i></button>
+{% include 'forms/make_payment.html' %}
+<div class="bton-menu" id="bton-menu">
+    <div class="sidebar-popup" id="sidebar-popup">
+
+        <a href="" id="payment-link"> Make payment &nbsp; <i class="fa-regular fa-money-bill-1"></i></a>
+        <hr class="hrs">
+        <a href="" id="move-link"> Move to </a>
+
+    </div>
+    <button id="menu-button"><i class="fa-solid fa-bars fa-xl"></i></button>
 </div>
 
 {% endblock %}
