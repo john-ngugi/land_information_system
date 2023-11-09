@@ -1,4 +1,9 @@
-<div class="input-group mb-3 form-loc">
-    <input type="text" class="form-control" placeholder="search location" aria-label="Recipient's username" aria-describedby="button-addon2">
-    <button class="btn btn-outline-primary" type="button" id="button-addon2">Search</button>
+<div class="mt-2 pe-2 form-loc">
+    <form action="" method="post">
+        {% csrf_token %}
+        <div class="input-group w-25 float-end bg-transparent">
+            <input type="text" class="form-control outline-primary " id="search-location-input-top-map" placeholder="search location" aria-label="Recipient's username" aria-describedby="button-submit">
+            <button class="btn btn-primary  " type="submit" id="button-submit">Search</button>
+        </div>
+    </form>
 </div>
